@@ -88,7 +88,7 @@ export default function Contact() {
               Let's connect
             </h3>
             <p className="text-neutral-400 font-light text-sm leading-relaxed mb-6">
-              I am actively looking for frontend and full-stack internship positions. Feel free to contact me directly using the information below or by submitting the form.
+              Feel free to reach out regarding projects, opportunities, collaborations, or just to connect.
             </p>
 
             {/* Direct Connect Buttons */}

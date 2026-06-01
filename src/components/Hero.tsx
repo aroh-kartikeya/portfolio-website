@@ -47,7 +47,7 @@ export default function Hero() {
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-purple-500/20 bg-purple-500/5 text-xs font-semibold text-purple-300 tracking-wide mb-6 uppercase"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />
-            Seeking Internships
+            Currently Building: Finance Tracker
           </motion.span>
 
           {/* Name */}
