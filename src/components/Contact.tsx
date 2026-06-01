@@ -18,9 +18,13 @@ export default function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
 
   // EMAILJS KEYS - User can replace these or load via Vite env variables: import.meta.env.VITE_EMAILJS_SERVICE_ID
-  const SERVICE_ID = ""; // e.g. "service_xxxxxx"
-  const TEMPLATE_ID = ""; // e.g. "template_xxxxxx"
-  const PUBLIC_KEY = ""; // e.g. "user_xxxxxx"
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID; // e.g. "service_xxxxxx"
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID; // e.g. "template_xxxxxx"
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY; // e.g. "user_xxxxxx"
+
+  console.log("SERVICE:", SERVICE_ID);
+console.log("TEMPLATE:", TEMPLATE_ID);
+console.log("PUBLIC:", PUBLIC_KEY);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -169,7 +173,7 @@ export default function Contact() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="John Doe"
+                    placeholder="Monkey D Luffy"
                     disabled={status === "sending"}
                     className="w-full px-4 py-3 bg-neutral-950/70 border border-white/5 focus:border-purple-500/50 text-white rounded-xl placeholder:text-neutral-600 focus:outline-none transition-colors duration-300 disabled:opacity-50"
                   />
@@ -187,7 +191,7 @@ export default function Contact() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="john@example.com"
+                    placeholder="Luffy@example.com"
                     disabled={status === "sending"}
                     className="w-full px-4 py-3 bg-neutral-950/70 border border-white/5 focus:border-purple-500/50 text-white rounded-xl placeholder:text-neutral-600 focus:outline-none transition-colors duration-300 disabled:opacity-50"
                   />
@@ -205,7 +209,7 @@ export default function Contact() {
                     rows={5}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Hey Aroh, let's discuss internship opportunities..."
+                    placeholder="Hey Aroh, let's connect..."
                     disabled={status === "sending"}
                     className="w-full px-4 py-3 bg-neutral-950/70 border border-white/5 focus:border-purple-500/50 text-white rounded-xl placeholder:text-neutral-600 focus:outline-none transition-colors duration-300 disabled:opacity-50 resize-none"
                   />
