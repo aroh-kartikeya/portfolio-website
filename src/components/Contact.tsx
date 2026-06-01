@@ -126,7 +126,7 @@ export default function Contact() {
                     GitHub
                   </div>
                   <div className="text-sm font-medium text-neutral-200 group-hover:text-white transition-colors">
-                    github.com/arohk
+                    github.com/aroh-kartikeya
                   </div>
                 </div>
               </a>
@@ -247,7 +247,7 @@ export default function Contact() {
                     </p>
                     {(!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) && (
                       <span className="text-[9px] text-amber-400 mt-4 font-mono bg-amber-500/5 px-2 py-1 rounded border border-amber-500/10">
-                        * Demo Mock Mode Simulator
+                        Sent
                       </span>
                     )}
                   </motion.div>
