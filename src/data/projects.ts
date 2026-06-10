@@ -1,3 +1,4 @@
+import qrStudioScreenshot from "../assets/projects/qr-studio.png";
 export interface Project {
   id: string;
   title: string;
@@ -48,14 +49,22 @@ export const completedProjects: Project[] = [
     gradient: "from-purple-600/30 via-pink-600/20 to-rose-600/30"
   },
   {
-    id: "qr-generator",
-    title: "QR Code Generator",
-    description: "A lightweight frontend tool that generates high-quality, customizable QR codes for links, text, or contacts.",
-    techStack: ["HTML", "CSS", "JavaScript", "Web QR API"],
-    githubUrl: "https://github.com/arohk/qr-generator",
-    liveUrl: "https://qr-gen-aroh.vercel.app",
-    gradient: "from-cyan-600/30 via-teal-600/20 to-emerald-600/30"
-  },
+  id: "qr-studio",
+  title: "QR Studio",
+  description:
+    "A full-stack QR code generator built with React, Tailwind CSS, Node.js, and Express. Users can generate, customize, and download QR codes through a responsive web interface.",
+  techStack: [
+    "React",
+    "Tailwind CSS",
+    "Node.js",
+    "Express",
+    "Vercel"
+  ],
+  githubUrl: "https://github.com/aroh-kartikeya/QR-Studio",
+  liveUrl: "https://qr-studio-iota.vercel.app",
+  imageUrl: qrStudioScreenshot,
+  gradient: "from-cyan-600/30 via-teal-600/20 to-emerald-600/30"
+},
   {
     id: "simon-game",
     title: "Simon Game",

@@ -11,7 +11,7 @@ export default function Projects() {
         return <BookOpen size={36} className="text-blue-400" />;
       case "blog-app":
         return <FileText size={36} className="text-purple-400" />;
-      case "qr-generator":
+      case "qr-studio":
         return <QrCode size={36} className="text-cyan-400" />;
       case "simon-game":
         return <Gamepad2 size={36} className="text-orange-400" />;
